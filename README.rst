@@ -52,6 +52,11 @@ Then define a ripozo resource and extend MongoKitManager:
     class PersonResource(ResourceBase):
         manager = PersonManager(connection)
 
+Installation
+============
+
+:code:`pip install git+git://github.com/igorkuksov/ripozo-mongokit.git@master`
+
 
 Known issues
 ============
