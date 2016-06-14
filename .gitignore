@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/ripozo-mongo.iml
+.idea/
+ripozo-mongo.iml
+*.log
+
+/.pydevproject
+/.project
+.project
+.pydevproject
+docs/
+ripozo_mongokit.egg-info/
+/ripozo-mongokit.iml
