@@ -8,4 +8,5 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from ripozo_mongokit.mnogokitmanager import MongoKitManager
+from ripozo_mongokit.restmixins import RetrievePageList
 

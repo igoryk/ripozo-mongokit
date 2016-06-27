@@ -4,7 +4,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 from setuptools import setup, find_packages
 
-version = '0.0.1.dev0'
+version = '0.0.1.dev1'
 
 setup(
     name='ripozo-mongokit',
@@ -26,7 +26,7 @@ setup(
         'tox',
         'mock',
         'pylint',
-        'pymongo<=2.9'
+        'pymongo<3.0'
     ],
     test_suite="ripozo_mongokit_tests",
     classifiers=[

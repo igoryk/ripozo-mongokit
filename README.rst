@@ -35,6 +35,7 @@ Then define a ripozo resource and extend MongoKitManager:
 
 .. code-block:: python
 
+    from ripozo import restmixins
     from ripozo-mongokit import MongoKitManager
     from mongokit import Connection
 
@@ -49,7 +50,7 @@ Then define a ripozo resource and extend MongoKitManager:
         database_name = 'user_data'
         collection_name = 'users'
 
-    class PersonResource(ResourceBase):
+    class PersonResource(restmixins.CRUDL):
         manager = PersonManager(connection)
 
 Installation
