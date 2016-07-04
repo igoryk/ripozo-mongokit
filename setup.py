@@ -26,8 +26,6 @@ setup(
         'unittest2',
         'tox',
         'mock',
-        'pylint',
-        'coveralls'
     ],
     test_suite="ripozo_mongokit_tests",
     classifiers=[
