@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 
 import unittest2 as test
 from bson.objectid import ObjectId
-from mock.mock import Mock, MagicMock
+from mock import Mock, MagicMock
 
 from ripozo_mongokit import MongoKitManager
 from mongokit import Document, Connection
