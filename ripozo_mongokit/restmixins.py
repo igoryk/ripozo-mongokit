@@ -8,12 +8,17 @@ from ripozo.decorators import apimethod, manager_translate
 
 import logging
 
+from ripozo.resources.restmixins import Update
+
+from ripozo_mongokit import export_name
+
 _logger = logging.getLogger(__name__)
 
 
+@export_name
 class RetrievePageList(restmixins.RetrieveList):
     """
-    Customized RetrieveList mixin to emulate Spring Data HATEOAS.
+    Customized RetrieveList mixin to mimic Spring-Data HATEoAS.
     Adds page properties to the resource and "last", "first", "prev", "next" links:
 
     {
@@ -69,3 +74,13 @@ class RetrievePageList(restmixins.RetrieveList):
         else:
             return super(RetrievePageList, cls).retrieve_list(cls, request)
 
+
+@export_name
+class FullUpdate(Update):
+    """
+    Registers PUT full updates to the resource.
+    """
+    @apimethod(methods=['PUT'])
+    @manager_translate(fields_attr='update_fields', validate=True, skip_required=True)
+    def full_update(cls, request):
+        return Update.update(cls, request)
