@@ -1,6 +1,11 @@
 ripozo-mongokit
 ===============
 
+.. image:: https://travis-ci.org/igorkuksov/ripozo-mongokit.svg?branch=master
+    :target: https://travis-ci.org/igorkuksov/ripozo-mongokit
+.. image:: https://coveralls.io/repos/github/igorkuksov/ripozo-mongokit/badge.svg?branch=master
+    :target: https://coveralls.io/github/igorkuksov/ripozo-mongokit?branch=master
+
 This package is a simple `ripozo <https://github.com/vertical-knowledge/ripozo>`_
 extension that provides a Manger implementation to integrate ripozo_ with `mongokit <https://github.com/namlook/mongokit>`_.
 It is capable of performing basic CRUD+L operation and fully implements
@@ -68,5 +73,5 @@ The work is in progress on the following features:
 
 2. Model field filtering
 
-3. Possible python compatibility problems. Tested on 2.6 and 2.7.
+3. Possible python compatibility problems. Tested on 2.7 and pypy.
 
